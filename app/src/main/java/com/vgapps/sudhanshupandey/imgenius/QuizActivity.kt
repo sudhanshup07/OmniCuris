@@ -233,7 +233,6 @@ class QuizActivity : AppCompatActivity() {
     @Throws(WindowManager.BadTokenException::class)
     private fun fetchNewQuestion() {
         if (!this.isFinishing) {
-            if (totalAnswerCounter > 1 && totalAnswerCounter % 5 == 0)
             resetCountdown()
             loadingQuestionDialog.show()
             disableViews()
